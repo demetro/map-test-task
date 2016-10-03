@@ -1,0 +1,40 @@
+html {
+	height: 100%;
+}
+
+body {
+	min-height: 100%;
+	overflow-y: hidden;
+	margin: 5px;
+}
+
+.ember-view, #map, .tooltip {
+	width: 100%;
+	height:calc(100vh - 10px);
+}
+
+.tooltip {
+	display: none;
+	position: absolute;
+	top:  5px;
+	right:0;
+	z-index: 1001;
+	max-width: 250px;
+	background-color: white;
+	border: 1px solid grey;
+	padding: 7px;
+	box-sizing: border-box;
+}
+
+.tooltip h4 {
+	white-space: nowrap;
+}
+
+.tooltip-close {
+	cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+	position: absolute;
+    right: 10px;
+    top: 0;
+}
